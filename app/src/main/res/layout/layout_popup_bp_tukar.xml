@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_round"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apakah Kamu Yakin"
+            android:textColor="#343434"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_marginTop="75dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:text="ingin menukarkan"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="100 Points"
+            android:id="@+id/tv_popup_bp_tukar_point"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="dengan"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"
+                android:textColor="#343434"
+                android:textSize="18sp"
+                android:text="100 soal?"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_popup_bp_tukar_rupiah"/>
+        </RelativeLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp">
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_border_yellow_50dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:text="YAKIN"
+                    android:textSize="15sp"
+                    android:textColor="#3C3C3C"
+                    android:id="@+id/btn_popup_bp_konfirmasi_ya"
+                    android:textAlignment="center"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_border_btn_cyan50dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="KEMBALI"
+                    android:textSize="15sp"
+                    android:textColor="#3C3C3C"
+                    android:id="@+id/btn_popup_bp_konfirmasi_tidak"
+                    android:textAlignment="center"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_popup_konfirmasi"
+        android:src="@drawable/bookopenflat"/>
+
+
+</RelativeLayout>
+</layout>

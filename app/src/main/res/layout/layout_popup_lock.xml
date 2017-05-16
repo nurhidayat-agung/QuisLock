@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_popup_bpmmitem_konfirmasi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_round"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hallo ....!"
+            android:textColor="#343434"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:text=" maaf ganggu waktu main kamu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="kamu udah waktunya belajar nih"
+            android:id="@+id/tv_popup_bp_tukar_point"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Untuk membuka kunci dan main game lagi"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:text="Kerjakan soal ini dengan benar"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            >
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_shadow_yellow"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:text="kerjakan soal"
+                    android:textSize="15sp"
+                    android:textColor="#0E5E99"
+                    android:id="@+id/btn_popup_bp_konfirmasi_ya"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_shadow_yellow"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Menu"
+                    android:textSize="15sp"
+                    android:textColor="#0E5E99"
+                    android:id="@+id/btn_popup_bp_konfirmasi_tidak"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bookopenflat"/>
+
+
+</RelativeLayout>
+
+</layout>

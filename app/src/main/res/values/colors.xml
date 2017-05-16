@@ -3,4 +3,29 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="public_yellow">#fddd0e</color>
+    <color name="public_blue">#0057a4</color>
+    <color name="public_light_blue">#4ECEC4</color>
+
+    <color name="holo_blue_dark">#ffffff</color>
+    <color name="view_divider_color">#ffffff</color>
+    <color name="view_divider_color_2">#ffffff</color>
+
+    <color name="xholo_blue_dark">#ff0099cc</color>
+    <color name="xview_divider_color">#BABABA</color>
+    <color name="xview_divider_color_2">#DADADA</color>
+
+    <color name="blue_text_color">#0a59a5</color>
+    <color name="dark_blue">#0064ab</color>
+
+    <color name="grown">#333333</color>
+    <color name="grey">#e6e6e6</color>
+
+    <color name="abu_abu">#f2f2f2</color>
+    <color name="red_attention">#ff0000</color>
+    <color name="grey_text">#505050</color>
+    <color name="grey_line">#B4B4B4</color>
+    <color name="yellow_selected">#FDDE11</color>
+    <color name="text_blue">#0E57A5</color>
 </resources>
