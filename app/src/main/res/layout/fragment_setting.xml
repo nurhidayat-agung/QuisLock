@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
-<RelativeLayout
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shadow_yellow"
+        android:text="Ubah Password"
+        android:id="@+id/btn_ubah_pass"
+        />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shadow_yellow"
+        android:text="ubah jumlah soal"
+        android:id="@+id/btn_set_jml_soal"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shadow_yellow"
+        android:text="Pilih Mapel"
+        android:id="@+id/btn_set_mapel"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shadow_yellow"
+        android:text="Pembayaranadmin"
+        android:id="@+id/btn_pembayaran"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
 </layout>

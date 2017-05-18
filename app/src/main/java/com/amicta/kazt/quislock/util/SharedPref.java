@@ -3,6 +3,8 @@ package com.amicta.kazt.quislock.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.amicta.kazt.quislock.model.LoginModel;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,10 +20,23 @@ public class SharedPref {
     final String LABEL_SIZE = "label_size";
     final String PACKAGE_SIZE = "pancakge_size";
     final String BOOL_BELAJAR = "isbelajar";
+    final String USERNAME = "username";
+    final String PASSWORD = "password";
+    final String ISFIRSTUSE = "isfirstuse";
+    final String ISLOOP = "isloop";
 
     public SharedPref(Context context) {
         sp = context.getSharedPreferences("quislock_app", Context.MODE_PRIVATE);
         spe = sp.edit();
+    }
+
+    public boolean getLoop(){
+        return sp.getBoolean(ISLOOP, true);
+    }
+
+    public void setLoop(boolean loop){
+        spe.putBoolean(ISLOOP, loop);
+        spe.commit();
     }
 
     public void setBelajar(boolean sudah){
@@ -29,18 +44,42 @@ public class SharedPref {
         spe.commit();
     }
 
+    public void setFirst(boolean first){
+        spe.putBoolean(ISFIRSTUSE, first);
+        spe.commit();
+
+    }
+
+    public boolean isFirst(){
+        return sp.getBoolean(ISFIRSTUSE, true);
+    }
+
     public boolean isBelajar(){
         return sp.getBoolean(BOOL_BELAJAR,false);
     }
 
-    public void setIsLoggedIn(boolean isLoggedIn, String date){
+    public void setIsLoggedIn(boolean isLoggedIn){
         spe.putBoolean(KEY_IS_LOGGED_IN, isLoggedIn);
-        spe.putString("logindate", date);
         spe.commit();
     }
 
     public boolean isLoggedIn(){
         return sp.getBoolean(KEY_IS_LOGGED_IN, false);
+    }
+
+    public void setPass(LoginModel loginModel){
+        spe.putString(USERNAME, loginModel.getUsername());
+        spe.putString(PASSWORD, loginModel.getPassword());
+        spe.commit();
+    }
+
+    public boolean isPass(LoginModel loginModel){
+        if (loginModel.getUsername().equalsIgnoreCase(sp.getString(USERNAME,""))){
+            if (loginModel.getPassword().equalsIgnoreCase(sp.getString(PASSWORD,""))){
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean saveLabel(List<String> pushLabel){

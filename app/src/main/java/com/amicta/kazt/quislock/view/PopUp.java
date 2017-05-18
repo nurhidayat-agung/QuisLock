@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.kazt.quislock.R;
 import com.example.kazt.quislock.databinding.LayoutPopupLockBinding;
 
 /**
@@ -36,6 +38,57 @@ public class PopUp extends Activity {
         params.gravity = Gravity.CENTER;
         dialog.setCanceledOnTouchOutside(false);
         binding.btnPopupBpKonfirmasiYa.setOnClickListener(v -> startActivity(new Intent(this, Soal1.class)));
+        binding.btnPopupBpKonfirmasiTidak.setOnClickListener(v -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_MAIN);
+            i.addCategory(Intent.CATEGORY_HOME);
+            PopUp.this.startActivity(i);
+            finish();
+        });
         dialog.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_MAIN);
+        i.addCategory(Intent.CATEGORY_HOME);
+        PopUp.this.startActivity(i);
+        finish();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("cek","this is onstart");
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("cek","this is onResume");
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("cek","this is onStop");
+
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("cek","this is onRestart");
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("cek","this is onDestroy");
+
     }
 }
