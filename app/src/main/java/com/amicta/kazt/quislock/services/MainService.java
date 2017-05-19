@@ -56,14 +56,14 @@ public class MainService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Toast.makeText(this, "onCreate()", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Sistem Pengunci Dijalankan", Toast.LENGTH_LONG).show();
         dbAdapter = new DBAdapter(this,1);
         sharedpref = new SharedPref(this);
     }
 
     @Override
     public void onDestroy() {
-        Toast.makeText(this, "service destroy", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Sistem Penunci Dimatikan", Toast.LENGTH_LONG).show();
         super.onDestroy();
     }
 

@@ -40,8 +40,10 @@
 
         <service android:name="com.amicta.kazt.quislock.services.MainService" />
 
-        <activity android:name="com.amicta.kazt.quislock.view.Soal1" />
-        <activity android:name="com.amicta.kazt.quislock.view.Soal2" />
+        <activity android:name="com.amicta.kazt.quislock.view.Soal1"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.amicta.kazt.quislock.view.Soal2"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <service
             android:name="com.amicta.kazt.quislock.services.SubService"
